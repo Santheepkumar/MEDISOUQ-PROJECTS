@@ -1,0 +1,89 @@
+body {
+  background-color: #f5f2ed;
+}
+
+body .HomeHealthServices {
+  width: 77%;
+  margin: auto;
+  padding-top: 5px;
+}
+
+body .HomeHealthServices-Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+body .HomeHealthServices-Top-Title {
+  color: #095081;
+  font-size: 40px;
+}
+
+body .HomeHealthServices-Top-Svg {
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+body .HomeHealthServices-Top-Svg-SvgLeft {
+  margin-right: 15px;
+}
+
+body .HomeHealthServices-CardMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .HomeHealthServices-CardMain-Card {
+  width: 32%;
+  background-color: #ffff;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 20px;
+}
+
+body .HomeHealthServices-CardMain-Card-Img {
+  width: 100%;
+  height: 290px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+body .HomeHealthServices-CardMain-Card-Titles {
+  margin-left: 20px;
+}
+
+body .HomeHealthServices-CardMain-Card-Titles-Name {
+  color: #90cc8d;
+  font-size: 24px;
+}
+
+body .HomeHealthServices-CardMain-Card-Titles-Price {
+  color: #3d3c3c;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+body .HomeHealthServices-CardMain-Card-Titles-Button {
+  background-color: #095081;
+  color: #ffff;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+  padding-top: 12px;
+  padding-right: 14px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+}
+/*# sourceMappingURL=index.css.map */

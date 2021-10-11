@@ -1,0 +1,75 @@
+$BlueColor: #095081;
+$GreenColor: #90cc8d;
+
+body {
+  background-color: #f5f2ed;
+  .HomeHealthServices {
+    width: 77%;
+    margin: auto;
+    padding-top: 5px;
+    &-Top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      &-Title {
+        color: $BlueColor;
+        font-size: 40px;
+      }
+      &-Svg {
+        margin-top: 40px;
+        margin-right: 10px;
+        &-SvgLeft {
+          margin-right: 15px;
+        }
+      }
+    }
+    &-CardMain {
+      display: flex;
+      justify-content: space-between;
+      &-Card {
+        width: 32%;
+        background-color: #ffff;
+        border-radius: 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-top: 20px;
+        &-Img {
+          width: 100%;
+          height: 290px;
+          border-radius: 15px 15px 0px 0px;
+        }
+        &-Titles {
+          margin-left: 20px;
+
+          &-Name {
+            color: $GreenColor;
+            font-size: 24px;
+          }
+          &-Price {
+            color: #3d3c3c;
+            font-size: 20px;
+            font-weight: 100;
+            margin-top: -10px;
+          }
+          &-Button {
+            background-color: $BlueColor;
+            color: #ffff;
+            font-size: 13px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            margin: {
+              top: 5px;
+              bottom: 22px;
+            }
+            padding: {
+              top: 12px;
+              right: 14px;
+              bottom: 12px;
+              left: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

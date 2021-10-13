@@ -1,6 +1,7 @@
 // Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCode from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import "./banner.scss";
 import BannerMain from "./BannerMain";
 import "swiper/swiper-bundle.css";
@@ -13,17 +14,28 @@ import "swiper/swiper-bundle.css";
 // import "swiper/css/pagination";
 
 const BannerSlider = () => {
+  SwiperCore.use([Navigation]);
+
   const bannerProps = {
     Name: "Anaphase+",
     Descrption: " Shampooing complement antichute",
     Price: "145.00 AED",
-    Buybutton: "BUYNOW",
-    BackGroundImage:
+    Image:
       "https://images.pexels.com/photos/3041110/pexels-photo-3041110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   };
+
   return (
     <div className='xtest'>
+      <button className='prev'>Prev</button>
+      <button className='next'>Next</button>
       <Swiper
+        style={{
+          width: "600px",
+        }}
+        navigation={{
+          prevEl: ".prev",
+          nextEl: ".next",
+        }}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
@@ -37,7 +49,6 @@ const BannerSlider = () => {
         <SwiperSlide>
           <BannerMain {...bannerProps} />
         </SwiperSlide>
-        ...
       </Swiper>
     </div>
   );

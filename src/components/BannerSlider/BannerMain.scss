@@ -1,45 +1,56 @@
 .CardCenter {
-  &-Img {
-    max-width: 600px;
-    position: relative;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  &-ImageContainer {
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
     border-radius: 15px;
   }
   &-Title {
-    display: flex;
     position: absolute;
     top: 30px;
-    left: 500px;
+    left: 30px;
     &-Left {
       text-align: left;
-     // margin-top: 10px;
       &-ButtonTop {
         background-color: white;
-        color: #355760;
-        font: bolder;
+        color: #1b434d;
+        font: bold;
         border: none;
         border-radius: 15px;
         padding: {
-          top: 5px;
-          left: 18px;
-          right: 18px;
-          bottom: 5px;
+          top: 8px;
+          left: 20px;
+          right: 20px;
+          bottom: 8px;
         }
       }
       &-Name {
         color: #f5f2ed;
         font-size: 35px;
+
+        margin: {
+          top: 50px;
+          left: 5px;
+        }
       }
       &-Description {
         color: #427162;
         width: 250px;
         font-size: 17px;
+        margin-left: 5px;
       }
 
       &-Price {
-        font: bolder;
+        font: bold;
+        margin-left: 5px;
       }
       &-BuyButton {
         background-color: #095081;
+        font: bold;
         color: white;
         padding: {
           top: 12px;
@@ -49,7 +60,15 @@
         }
         border: none;
         border-radius: 7px;
+        margin-left: 5px;
       }
     }
+  }
+  &-Dot {
+    font-size: 70px;
+    position: absolute;
+    top: 210px;
+    left: 700px;
+    color: #f5f2ed;
   }
 }

@@ -1,0 +1,36 @@
+.PopularCategory {
+  width: 62%;
+  margin: auto;
+
+  &-Top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+    &-Title {
+      font-size: 35px;
+      color: #095081;
+      font-weight: bold;
+    }
+    &-Img {
+      margin-top: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+      &-Left {
+        margin-right: 17px;
+        background-color: #ffff;
+        border: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &-Right {
+        background-color: #ffff;
+        border: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

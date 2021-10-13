@@ -1,0 +1,129 @@
+.PopularCategory {
+  width: 75%;
+  margin: auto;
+}
+
+@media (min-width: 811px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .PopularCategory {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 810px) {
+  .PopularCategory {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.PopularCategory-Top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 75px;
+}
+
+.PopularCategory-Top-Title {
+  font-size: 35px;
+  color: #095081;
+  font-weight: bold;
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-Top-Title {
+    font-size: 25px;
+  }
+}
+
+.PopularCategory-Top-Img {
+  margin-top: 30px;
+}
+
+.PopularCategory-Top-Img-Left {
+  margin-right: 17px;
+}
+
+.PopularCategory-CardMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-CardMain {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}
+
+.PopularCategory-CardMain-Card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  width: 23%;
+  margin-top: 35px;
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-CardMain-Card {
+    width: 100%;
+  }
+}
+
+.PopularCategory-CardMain-Card-Img {
+  width: 100%;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-CardMain-Card-Img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-CardMain-Card-Img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.PopularCategory-CardMain-Card-Name {
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #90cc8d;
+  color: #f5f2ed;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: -10px;
+  border-radius: 0px 0px 8px 8px;
+  text-align: center;
+}
+
+@media (min-width: 811px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .PopularCategory-CardMain-Card-Name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 810px) {
+  .PopularCategory-CardMain-Card-Name {
+    font-size: 18px;
+    margin-bottom: -22px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

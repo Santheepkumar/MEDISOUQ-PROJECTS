@@ -1,6 +1,6 @@
 .HssMain {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   &-Card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
@@ -17,9 +17,9 @@
     &-Titles {
       margin: {
         left: 24px;
-        right: 10px;
+        right: 24px;
       }
-      //   flex-flow: row;
+
       &-Name {
         color: #90cc8d;
         font: bold;
@@ -32,15 +32,16 @@
       }
       &-Button {
         background-color: #095081;
+        border: none;
         border-radius: 8px;
         color: #f1f4f6;
+        margin-bottom: 22px;
         padding: {
           top: 10px;
           bottom: 10px;
           left: 10px;
           right: 10px;
         }
-        margin-bottom: 22px;
       }
     }
   }

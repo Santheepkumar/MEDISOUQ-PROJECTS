@@ -2,7 +2,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
-import "./ServicesSlider.scss";
+import "./Services.scss";
 import ServiceCard from "./ServiceCard";
 
 import "swiper/swiper-bundle.css";

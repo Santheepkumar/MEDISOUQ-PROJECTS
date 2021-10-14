@@ -1,6 +1,6 @@
 import "./App.css";
 import BannerSlider from "./components/BannerSlider/BannerSlider";
-import CategorySlider from "./components/CategorySlider/CategorySlider";
+import ProductCategorySlider from "./components/CategorySlider/ProductCategorySlider";
 import ServicesSlider from "./components/HSS/ServicesSlider";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ function App() {
 
         <Switch>
           <Route path='/Category'>
-            <CategorySlider />
+            <ProductCategorySlider />
           </Route>
           <Route exact path='/'>
             <BannerSlider />

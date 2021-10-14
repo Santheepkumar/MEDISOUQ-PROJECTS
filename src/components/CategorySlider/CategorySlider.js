@@ -63,9 +63,32 @@ const PopularCategory = () => {
           nextEl: ".next",
         }}
         spaceBetween={50}
-        slidesPerView={1}
+        breakpoints={{
+          1000: {
+            slidesPerView: 4,
+          },
+          811: {
+            slidesPerView: 2,
+          },
+          10: {
+            slidesPerView: 1,
+          },
+        }}
+        // slidesPerView={4}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}>
+        <SwiperSlide>
+          <SliderMain />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderMain />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderMain />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderMain />
+        </SwiperSlide>
         <SwiperSlide>
           <SliderMain />
         </SwiperSlide>

@@ -1,4 +1,4 @@
-.CardMain {
+.CardCategory {
   display: flex;
   justify-content: space-between;
   margin: {
@@ -9,7 +9,7 @@
   &-Card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
-    width: 100%;
+    width: 23%;
     &-Img {
       width: 100%;
       margin: {

@@ -3,7 +3,7 @@ import "./BannerMain.scss";
 
 export default function BannerMain({ Name, Descrption, Price, Image }) {
   return (
-    <div className='CardCenter'>
+    <a href='https://www.google.co.in' className='CardCenter'>
       <div className='CardCenter-ImageContainer'>
         <img
           className='Image'
@@ -17,15 +17,13 @@ export default function BannerMain({ Name, Descrption, Price, Image }) {
             Best Sellers
           </button>
           <h1 className='CardCenter-Title-Left-Name'>{Name}</h1>
-          <h2 className='CardCenter-Title-Left-Description'>
-            {Descrption}
-          </h2>
+          <h2 className='CardCenter-Title-Left-Description'>{Descrption}</h2>
 
           <h4 className='CardCenter-Title-Left-Price'>{Price}</h4>
           <button className='CardCenter-Title-Left-BuyButton'>BUY NOW</button>
         </div>
       </div>
       <p className='CardCenter-Dot'>. . . .</p>
-    </div>
+    </a>
   );
 }

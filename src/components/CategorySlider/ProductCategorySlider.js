@@ -2,8 +2,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
-import "./CategorySlider.scss";
-import SliderMain from "./SliderMain";
+import "./ProductCategorySlider.scss";
+import ProductCategoryCard from "./ProductCategoryCard";
 import "swiper/swiper-bundle.css";
 
 // swiper core styles
@@ -15,6 +15,10 @@ import "swiper/swiper-bundle.css";
 
 const PopularCategory = () => {
   SwiperCore.use([Navigation]);
+
+  const CategoryProps = {
+    name: "PersonalCare",
+  };
 
   return (
     <div className='PopularCategory'>
@@ -62,7 +66,7 @@ const PopularCategory = () => {
           prevEl: ".prev",
           nextEl: ".next",
         }}
-        spaceBetween={50}
+        spaceBetween={20}
         breakpoints={{
           1000: {
             slidesPerView: 4,
@@ -78,28 +82,28 @@ const PopularCategory = () => {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderMain />
+          <ProductCategoryCard {...CategoryProps} />
         </SwiperSlide>
       </Swiper>
     </div>

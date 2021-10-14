@@ -1,15 +1,13 @@
 .CardCategory {
-  display: flex;
-  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
   margin: {
     top: 30px;
     left: 5px;
-    right: 5px;
+    right: 8px;
   }
+
   &-Card {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 8px;
-    width: 23%;
     &-Img {
       width: 100%;
       margin: {
@@ -25,6 +23,9 @@
       padding: {
         top: 30px;
         bottom: 30px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 20px;
       }
       margin-bottom: 0px;
       border-radius: 0px 0px 8px 8px;

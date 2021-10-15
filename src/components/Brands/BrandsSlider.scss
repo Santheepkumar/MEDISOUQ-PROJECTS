@@ -1,0 +1,36 @@
+.Brands {
+  width: 80%;
+  margin: auto;
+  &-Top {
+    display: flex;
+    justify-content: space-between;
+
+    &-Name {
+      color: #095081;
+      font-size: 3rem;
+      @media (min-width: 811px) and (max-width: 1024px) {
+        font-size: 35px;
+      }
+      @media (max-width: 811px) {
+        font-size: 30px;
+        margin-top: 25px;
+      }
+    }
+    &-Img {
+      margin-top: 40px;
+      &:hover {
+        cursor: pointer;
+      }
+      &-Left {
+        margin-right: 13px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-ImgMain {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}

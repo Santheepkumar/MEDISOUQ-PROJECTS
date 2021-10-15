@@ -12,21 +12,34 @@
         font-size: 30px;
         color: #095081;
         font-weight: bold;
+        @media (min-width: 811px) and (max-width: 1024px) {
+          margin-top: 30px;
+          font-size: 27px;
+        }
+        @media (max-width: 811px) {
+          font-size: 20px;
+          margin-top: 35px;
+        }
+        @media (max-width: 500px) {
+          font-size: 18px;
+        }
       }
       &-Img {
-        margin-top: 30px;
+        margin-top: 35px;
+
         &:hover {
           cursor: pointer;
         }
         &-Left {
-          margin-right: 17px;
-
+          background-color: #f5f2ed;
           border: none;
+          margin-right: 10px;
           &:hover {
             cursor: pointer;
           }
         }
         &-Right {
+          background-color: #f5f2ed;
           border: none;
           &:hover {
             cursor: pointer;

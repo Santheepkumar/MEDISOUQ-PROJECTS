@@ -3,6 +3,7 @@ import BannerSlider from "./components/BannerSlider/BannerSlider";
 import ProductCategorySlider from "./components/CategorySlider/ProductCategorySlider";
 import ServicesSlider from "./components/HSS/ServicesSlider";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import BrandsSlider from "./components/Brands/BrandsSlider";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Link to='/Category'> Category Slider</Link>
         <Link to='/HSS'> HSS</Link>
+        <Link to='/Brands'> Brands</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -20,6 +22,9 @@ function App() {
           </Route>
           <Route path='/HSS'>
             <ServicesSlider />
+          </Route>
+          <Route path='/Brands'>
+            <BrandsSlider />
           </Route>
         </Switch>
       </Router>

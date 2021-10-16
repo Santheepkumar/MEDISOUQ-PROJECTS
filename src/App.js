@@ -7,6 +7,7 @@ import BrandsSlider from "./components/Brands/BrandsSlider";
 import BlogSlider from "./components/HealthBlog/BlogSlider";
 import BlogMobileSlider from "./components/HealthBlog/BlogMobileSlider";
 import DesktopSlider from "./components/HealthBlog/DesktopSlider";
+import MegaManu from "./components/MegaManu/MegaManu";
 function App() {
   return (
     <div className='App'>
@@ -17,6 +18,7 @@ function App() {
         <Link to='/Blog'>Health-Blog</Link>
         <Link to='/BlogMobile'>BlogMobile</Link>
         <Link to='/Desktop'>Desktop</Link>
+        <Link to='MegaManu'>MegaMenu</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -39,6 +41,9 @@ function App() {
           </Route>
           <Route path='/Desktop'>
             <DesktopSlider />
+          </Route>
+          <Route path='/MegaManu'>
+            <MegaManu />
           </Route>
         </Switch>
       </Router>

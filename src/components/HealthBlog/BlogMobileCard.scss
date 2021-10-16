@@ -1,0 +1,22 @@
+.CardContainer {
+  &-Card2 {
+    &-Img {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+    &-Name {
+      color: #095081;
+      font-size: 25px;
+      margin-top: -5px;
+    }
+    &-Titles {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -15px;
+      &-Right {
+        margin-top: 12px;
+        color: #96ce93;
+      }
+    }
+  }
+}

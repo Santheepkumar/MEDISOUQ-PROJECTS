@@ -1,0 +1,32 @@
+.HealthBlog {
+  width: 80%;
+  margin: auto;
+  &-Top {
+    display: flex;
+    justify-content: space-between;
+    &-LeftName {
+      color: #095081;
+      @media (max-Width:500px) {
+          font-size: 25px;
+      }
+    }
+
+    &-RightContainer {
+      display: flex;
+      &-ViewAll {
+        color: #095081;
+        font-size: larger;
+        margin: {
+          top: 25px;
+          right: 10px;
+        }
+      }
+      &-Arrow {
+        margin-top: 30px;
+        &-ArrowLeft {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

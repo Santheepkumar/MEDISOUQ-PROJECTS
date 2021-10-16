@@ -1,13 +1,31 @@
+@mixin mobile {
+  @media (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 811px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 811px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
 .HealthBlog {
-  width: 80%;
+  width: 1200px;
   margin: auto;
   &-Top {
     display: flex;
     justify-content: space-between;
     &-LeftName {
       color: #095081;
-       @media (max-Width:500px) {
-          font-size: 25px;
+      @include mobile{
+        font-size: 4px;
       }
     }
 
@@ -20,6 +38,9 @@
           top: 25px;
           right: 10px;
         }
+      }
+      @media (max-width: 400px) {
+        font-size: 15px;
       }
       &-Arrow {
         margin-top: 30px;

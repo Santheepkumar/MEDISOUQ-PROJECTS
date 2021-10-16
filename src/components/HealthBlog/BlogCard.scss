@@ -1,4 +1,24 @@
-.HealthBlog {
+@mixin mobile {
+  @media (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 811px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 811px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
+.HealthBlogCard {
+  margin: 0;
+  padding: 0;
   &-Main {
     width: 100%;
     &-Img {
@@ -7,6 +27,9 @@
       height: 350px;
     }
     &-Name {
+      @include mobile {
+        font-size: 18px;
+      }
       color: #095081;
       font-size: 27px;
     }

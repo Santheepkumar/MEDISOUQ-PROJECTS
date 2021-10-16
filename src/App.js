@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import BrandsSlider from "./components/Brands/BrandsSlider";
 import BlogSlider from "./components/HealthBlog/BlogSlider";
 import BlogMobileSlider from "./components/HealthBlog/BlogMobileSlider";
+import DesktopSlider from "./components/HealthBlog/DesktopSlider";
 function App() {
   return (
     <div className='App'>
@@ -15,6 +16,7 @@ function App() {
         <Link to='/Brands'> Brands</Link>
         <Link to='/Blog'>Health-Blog</Link>
         <Link to='/BlogMobile'>BlogMobile</Link>
+        <Link to='/Desktop'>Desktop</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -34,6 +36,9 @@ function App() {
           </Route>
           <Route path='/BlogMobile'>
             <BlogMobileSlider />
+          </Route>
+          <Route path='/Desktop'>
+            <DesktopSlider />
           </Route>
         </Switch>
       </Router>

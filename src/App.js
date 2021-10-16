@@ -4,7 +4,8 @@ import ProductCategorySlider from "./components/CategorySlider/ProductCategorySl
 import ServicesSlider from "./components/HSS/ServicesSlider";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import BrandsSlider from "./components/Brands/BrandsSlider";
-
+import BlogSlider from "./components/HealthBlog/BlogSlider";
+import BlogMobileSlider from "./components/HealthBlog/BlogMobileSlider";
 function App() {
   return (
     <div className='App'>
@@ -12,6 +13,8 @@ function App() {
         <Link to='/Category'> Category Slider</Link>
         <Link to='/HSS'> HSS</Link>
         <Link to='/Brands'> Brands</Link>
+        <Link to='/Blog'>Health-Blog</Link>
+        <Link to='/BlogMobile'>BlogMobile</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -25,6 +28,12 @@ function App() {
           </Route>
           <Route path='/Brands'>
             <BrandsSlider />
+          </Route>
+          <Route path='/Blog'>
+            <BlogSlider />
+          </Route>
+          <Route path='/BlogMobile'>
+            <BlogMobileSlider />
           </Route>
         </Switch>
       </Router>

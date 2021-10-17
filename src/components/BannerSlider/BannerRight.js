@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function BannerLeft() {
+export default function BannerRight() {
   return (
-    <div className='CardsComponent-CardLeft'>
+    <div>
+      <div className='CardsComponent-CardLeft'>
         <div className='CardsComponent-CardLeft-TopContainer'>
           <button className='CardsComponent-CardLeft-TopContainer-Button'>
             SALE
@@ -10,17 +11,15 @@ export default function BannerLeft() {
           <img
             className='CardsComponent-CardLeft-TopContainer-Img'
             src=''
-            alt=''
+            alt='Snow'
           />
         </div>
         <div className='CardsComponent-CardLeft-Titles'>
           <h1 className='CardsComponent-CardLeft-Titles-Name'>
-            Mustela Moistrurising Baby Lotion 300 ML
-          </h1>
-          <h1 className='CardsComponent-CardLeft-Titles-Price'>
-            AED 60.00 <span>AED 50.00</span>
+            ORS Strawberry Soluble Tablets 12's
           </h1>
         </div>
       </div>
+    </div>
   );
 }

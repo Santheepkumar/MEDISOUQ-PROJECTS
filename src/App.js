@@ -20,7 +20,7 @@ function App() {
         <Link to='/BlogMobile'>BlogMobile</Link>
         <Link to='/Desktop'>Desktop</Link>
         <Link to='MegaManu'>MegaMenu</Link>
-        <Link to="Gridsample">sampleGrid</Link>
+        <Link to="Gridsample">BannerMainGrid</Link>
 
         <Switch>
           <Route path='/Category'>

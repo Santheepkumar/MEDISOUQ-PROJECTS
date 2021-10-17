@@ -1,74 +1,78 @@
-.CardCenter {
-  position: relative;
-  width: 600px;
-  height: 500px;
-  &-ImageContainer {
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-    overflow: hidden;
-    border-radius: 15px;
-  }
-  &-Title {
-    position: absolute;
-    bottom: 170px;
-    left: 30px;
-    &-Left {
-      text-align: left;
-      &-ButtonTop {
-        background-color: white;
-        color: #1b434d;
-        font: bold;
-        border: none;
-        border-radius: 15px;
-        padding: {
-          top: 8px;
-          left: 20px;
-          right: 20px;
-          bottom: 8px;
+.CardsComponent {
+  &-CardCenter {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    &-ImageContainer {
+      display: inline-block;
+      width: inherit;
+      height: inherit;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    &-Title {
+      position: absolute;
+      bottom: 170px;
+      left: 30px;
+      &-Left {
+        text-align: left;
+        &-ButtonTop {
+          background-color: white;
+          color: #1b434d;
+          font: bold;
+          border: none;
+          border-radius: 15px;
+          padding: {
+            top: 8px;
+            left: 20px;
+            right: 20px;
+            bottom: 8px;
+          }
         }
-      }
-      &-Name {
-        color: #f5f2ed;
-        font-size: 35px;
+        &-Name {
+          color: #f5f2ed;
+          font-size: 35px;
 
-        margin: {
-          top: 50px;
-          left: 5px;
+          margin: {
+            top: 50px;
+            left: 5px;
+          }
         }
-      }
-      &-Description {
-        color: #427162;
-        width: 250px;
-        font-size: 17px;
-        margin-left: 5px;
-      }
+        &-Description {
+          color: #427162;
+          width: 250px;
+          font-size: 17px;
+          margin-left: 5px;
+        }
 
-      &-Price {
-        font: bold;
-        margin-left: 5px;
-      }
-      &-BuyButton {
-        background-color: #095081;
-        font: bold;
-        color: white;
-        padding: {
-          top: 12px;
-          right: 15px;
-          bottom: 12px;
-          left: 15px;
+        &-Price {
+          font: bold;
+          margin-left: 5px;
         }
-        border: none;
-        border-radius: 7px;
-        margin-left: 5px;
+        &-BuyButton {
+          background-color: #095081;
+          font: bold;
+          color: white;
+          padding: {
+            top: 12px;
+            right: 15px;
+            bottom: 12px;
+            left: 15px;
+          }
+          border: none;
+          border-radius: 7px;
+          margin-left: 5px;
+        }
       }
     }
-  }
-  &-Dot {
-    font-size: 70px;
-    position: absolute;
-    top: 210px;
-    left: 700px;
-    color: #f5f2ed;
+    &-Dot {
+      font-size: 70px;
+      position: absolute;
+      top: 210px;
+      left: 700px;
+      color: #f5f2ed;
+    }
   }
 }

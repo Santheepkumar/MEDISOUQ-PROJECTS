@@ -1,8 +1,8 @@
-// Import Swiper React components
+// Import Swiper React Components
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
-import "./banner.scss";
+import "./bannerSlider.scss";
 import BannerMain from "./BannerMain";
 import "swiper/swiper-bundle.css";
 
@@ -25,12 +25,13 @@ const BannerSlider = () => {
   };
 
   return (
-    <div className='xtest'>
-      <button className='prev'>Prev</button>
-      <button className='next'>Next</button>
+    <div className='CardsCenter'>
+      {/* <button className='prev'>Prev</button>
+      <button className='next'>Next</button> */}
+
       <Swiper
         style={{
-          width: "600px",
+          width: "100%",
         }}
         navigation={{
           prevEl: ".prev",

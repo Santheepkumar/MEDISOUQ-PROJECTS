@@ -3,11 +3,12 @@ import BannerSlider from "./components/BannerSlider/BannerSlider";
 import ProductCategorySlider from "./components/CategorySlider/ProductCategorySlider";
 import ServicesSlider from "./components/HSS/ServicesSlider";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import BrandsSlider from "./components/Brands/BrandsSlider";
+//import BrandsSlider from "./components/Brands/BrandsSlider";
 import BlogSlider from "./components/HealthBlog/BlogSlider";
 import BlogMobileSlider from "./components/HealthBlog/BlogMobileSlider";
 import DesktopSlider from "./components/HealthBlog/DesktopSlider";
 import MegaManu from "./components/MegaManu/MegaManu";
+import BannerGridSample from "./components/BannerSlider/BannerGridSample";
 function App() {
   return (
     <div className='App'>
@@ -19,6 +20,7 @@ function App() {
         <Link to='/BlogMobile'>BlogMobile</Link>
         <Link to='/Desktop'>Desktop</Link>
         <Link to='MegaManu'>MegaMenu</Link>
+        <Link to="Gridsample">sampleGrid</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -30,9 +32,9 @@ function App() {
           <Route path='/HSS'>
             <ServicesSlider />
           </Route>
-          <Route path='/Brands'>
+          {/* <Route path='/Brands'>
             <BrandsSlider />
-          </Route>
+          </Route> */}
           <Route path='/Blog'>
             <BlogSlider />
           </Route>
@@ -44,6 +46,9 @@ function App() {
           </Route>
           <Route path='/MegaManu'>
             <MegaManu />
+          </Route>
+          <Route path='/Gridsample'>
+            <BannerGridSample />
           </Route>
         </Switch>
       </Router>

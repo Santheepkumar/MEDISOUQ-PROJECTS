@@ -1,14 +1,14 @@
-import "./App.css";
 import BannerSlider from "./components/BannerSlider/BannerSlider";
 import ProductCategorySlider from "./components/CategorySlider/ProductCategorySlider";
 import ServicesSlider from "./components/HSS/ServicesSlider";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import BrandsSlider from "./components/Brands/BrandsSlider";
 import BlogSlider from "./components/HealthBlog/BlogSlider";
 import BlogMobileSlider from "./components/HealthBlog/BlogMobileSlider";
 import DesktopSlider from "./components/HealthBlog/DesktopSlider";
 import MegaManu from "./components/MegaManu/MegaManu";
 import BannerGridSample from "./components/BannerSlider/BannerGridSample";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
     <div className='App'>

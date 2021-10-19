@@ -1,117 +1,130 @@
-.MegaMenu {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 1fr;
-  width: 80%;
-  margin: auto;
-  &-Menu {
-    width: 170px;
-    &-HeaderName {
-      font-size: 16px;
-      font-weight: bold;
-      color: #274c55;
-    }
-    &-link {
-      font-size: 5px;
-      color: #395b64;
-    }
-  }
-  &-MainContainer {
+.Body {
+  &-MegaMenu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-rows: 150px 250px;
-    grid-template-columns: 200px 200px;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    margin: auto;
+    &-Menu {
+      width: 170px;
+      &-HeaderName {
+        font-size: 16px;
+        font-weight: bold;
+        color: #274c55;
+      }
+      &-LinkContainer {
+        margin-top: 1.5rem;
+        &-Link {
+          font-size: 14px;
+          color: #395b64;
+        }
+      }
+    }
+    &-MainContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 150px 250px;
+      grid-template-columns: 200px 200px;
+      grid-gap: 20px;
 
-    &-Main1 {
-      grid-column: 1/3;
-      grid-row: 1/2;
-
-      position: relative;
-      &-Img {
-        width: 100%;
-        height: 100%;
+      &-Main1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        border: 2px solid #f0f0f0;
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        position: relative;
+        &-Img {
+          width: 100%;
+          height: 100%;
+          border-radius: 13px;
+        }
+        &-Titles {
+          text-align: center;
+
+          position: absolute;
+          top: 0px;
+          right: 25px;
+          &-Name {
+            color: #f4aa0c;
+            font-size: 25px;
+          }
+          &-Description {
+            color: #f4aa0c;
+            font-weight: unset;
+            font-size: 1rem;
+          }
+          &-Button {
+            background-color: #095081;
+            color: #ebeff2;
+            font-size: 10px;
+            border-radius: 8px;
+            border: none;
+            padding: {
+              top: 8px;
+              bottom: 6px;
+              left: 15px;
+              right: 15px;
+            }
+          }
+        }
       }
-      &-Titles {
+      &-Main2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative;
         text-align: center;
 
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        &-Name {
-          color: #f4aa0c;
-          font-size: 25px;
+        &-Img {
+          width: 100%;
+          height: 100%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 13px;
         }
-        &-Description {
-          color: #f4aa0c;
-          font-weight: unset;
-          font-size: 1rem;
-        }
-        &-Button {
-          background-color: #095081;
-          color: #ebeff2;
-          font-size: 10px;
-          border-radius: 8px;
-          padding: {
-            top: 8px;
-            bottom: 6px;
-            left: 15px;
-            right: 15px;
+        &-Titles {
+          position: absolute;
+          top: 0px;
+          right: 25px;
+          &-Name {
+            //original color
+            //color: #ffff;
+            //ruff color
+            color: #f4aa0c;
+            font-size: 25px;
+          }
+          &-Button {
+            background-color: #095081;
+            color: #ebeff2;
+            font-size: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            justify-content: center;
+            border: none;
+            padding: {
+              top: 8px;
+              bottom: 6px;
+              left: 15px;
+              right: 15px;
+            }
           }
         }
       }
-    }
-    &-Main2 {
-      grid-column: 1/2;
-      grid-row: 2/3;
-      position: relative;
-      text-align: center;
-
-      &-Img {
-        width: 100%;
-        height: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border-radius: 13px;
-      }
-      &-Titles {
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        &-Name {
-          //original color
-          //color: #ffff;
-          //ruff color
-          color: #f4aa0c;
-          font-size: 25px;
+      &-Main3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        position: relative;
+        &-Img {
+          width: 100%;
+          height: 100%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 13px;
         }
-        &-Button {
-          background-color: #095081;
-          color: #ebeff2;
-          font-size: 10px;
-          border-radius: 8px;
-          font-weight: bold;
-          justify-content: center;
-          padding: {
-            top: 8px;
-            bottom: 6px;
-            left: 15px;
-            right: 15px;
-          }
-        }
-      }
-    }
-    &-Main3 {
-      grid-column: 2/3;
-      grid-row: 2/3;
-      position: relative;
-      &-Img {
-        width: 100%;
-        height: 100%;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        border-radius: 13px;
       }
     }
   }

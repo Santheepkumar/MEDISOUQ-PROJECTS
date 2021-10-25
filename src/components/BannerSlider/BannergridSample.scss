@@ -1,12 +1,34 @@
+@mixin mobile {
+  @media (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 811px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 811px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
 .CardsComponent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-template-rows: 1fr 1fr;
   grid-template-rows: 400px 250px;
-  width: 80%;
+  width: 1200px;
   text-align: center;
   margin: auto;
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
   padding: {
     top: 50px;
     bottom: 50px;
@@ -16,6 +38,10 @@
     grid-row: 1/2;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include mobile {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
     &-TopContainer {
       display: flex;
       &-Img {
@@ -24,66 +50,23 @@
         border-radius: 20px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       }
-      //   &-Button {
-      //     background-color: #90cc8d;
-      //     color: #f6fbf6;
-      //     border: none;
-      //     font-weight: bold;
-      //     height: 25px;
-      //     margin-top: 30px;
-      //     padding: {
-      //       top: 0px;
-      //       left: 10px;
-      //       bottom: 0px;
-      //       right: 10px;
-      //     }
-      //     border-radius: 0px 8px 8px 0px;
-      //   }
     }
-    // &-Titles {
-    //   &-Button {
-    //     background-color: #095081;
-    //     color: #f6f8f9;
-    //     padding: {
-    //       top: 8px;
-    //       bottom: 8px;
-    //       left: 12px;
-    //       right: 12px;
-    //     }
-    //     border: none;
-    //     border-radius: 7px;
-    //   }
-    //   &-Name {
-    //     color: #355860;
-    //     font-size: 20px;
-    //     font-weight: unset;
-    //     width: 200px;
-    //     margin: auto;
-    //   }
-    //   &-Price {
-    //     display: flex;
-    //     justify-content: space-between;
-
-    //     &-Left {
-    //       font-weight: bold;
-    //       text-decoration: line-through;
-    //       font-size: 20px;
-    //     }
-    //     &-Right {
-    //       font-size: 20px;
-    //       text-decoration: none;
-    //       color: #90cc8d;
-    //     }
-    //   }
-    // }
   }
-  //   &-CardMain {
-  //     grid-column: 2/4;
-  //     grid-row: 1/2;
-  //   }
+  &-CardCenter {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    @include mobile {
+      grid-column: 1/3;
+      grid-row: 2/3;
+    }
+  }
   &-CardRight {
     grid-column: 4/5;
     grid-row: 1/2;
+    @include mobile {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
 
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -93,46 +76,13 @@
     }
     &-TopContainer {
       display: flex;
-      //   &-Button {
-      //     background-color: #90cc8d;
-      //     color: #204950;
-      //     border: none;
-      //     font-weight: bold;
-      //     height: 25px;
-      //     margin-top: 30px;
-      //     padding: {
-      //       top: 0px;
-      //       left: 10px;
-      //       bottom: 0px;
-      //       right: 10px;
-      //     }
-      //     border-radius: 0px 8px 8px 0px;
-      //   }
     }
-
-    // &-Titles {
-    //   &-Name {
-    //     color: #355860;
-    //     font-size: 20px;
-    //     font-weight: unset;
-    //     width: 200px;
-    //     margin: auto;
-    //   }
-    //   &-Button {
-    //     background-color: #095081;
-    //     color: #f6f8f9;
-    //     padding: {
-    //       top: 8px;
-    //       bottom: 8px;
-    //       left: 12px;
-    //       right: 12px;
-    //     }
-    //     border: none;
-    //     border-radius: 7px;
-    //   }
-    // }
   }
   &-CardBottomLeft {
+    @include mobile {
+      grid-column: 1/3;
+      grid-row: 3/4;
+    }
     grid-column: 1/3;
     grid-row: 2/3;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -147,6 +97,10 @@
     grid-column: 3/5;
     grid-row: 2/3;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include mobile {
+      grid-column: 1/3;
+      grid-row: 4/5;
+    }
 
     &-Img {
       height: 100%;

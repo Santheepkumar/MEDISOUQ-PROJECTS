@@ -2,7 +2,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
-import "./bannerSlider.scss";
 import BannerMain from "./BannerMain";
 import "swiper/swiper-bundle.css";
 

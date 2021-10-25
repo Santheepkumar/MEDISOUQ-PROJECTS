@@ -1,0 +1,16 @@
+.Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  &-Titles {
+      margin-top: 100px;
+    &-Name {
+      color: #1e295b;
+      font-size: 20px;
+    }
+    &-Description {
+      color: #6a6a6a;
+    }
+  }
+}

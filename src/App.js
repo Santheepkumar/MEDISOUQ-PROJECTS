@@ -10,6 +10,7 @@ import DesktopSlider from "./components/HealthBlog/DesktopSlider";
 import MegaManu from "./components/MegaManu/MegaManu";
 import BannerGridSample from "./components/BannerSlider/BannerGridSample";
 import NavBarMain from "./components/NavBar/NavBarMain";
+import SlotSlider from "./components/SlotPikker/SlotSlider";
 function App() {
   return (
     <div className='App'>
@@ -23,6 +24,7 @@ function App() {
         <Link to='MegaManu'>MegaMenu</Link>
         <Link to='Gridsample'>BannerMainGrid</Link>
         <Link to='NavBar'>NavBar</Link>
+        <Link to="SlotSlider">slot Slider</Link>
 
         <Switch>
           <Route path='/Category'>
@@ -55,6 +57,10 @@ function App() {
           <Route path='/NavBar'>
             <NavBarMain />
           </Route>
+          <Route path='/SlotPikker'>
+            <SlotSlider />
+          </Route>
+          ;
         </Switch>
       </Router>
     </div>
